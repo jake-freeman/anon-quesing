@@ -9,6 +9,10 @@ const channel = 'jacobfreemaninc';
 
 // Define configuration options
 const opts = {
+    connection: {
+		secure: true,
+		reconnect: true
+	},
     identity: {
         username: channel,
         password: oauth,
