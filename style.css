@@ -1,0 +1,13 @@
+body {
+    background-color: #2e2e2e;
+    color: #F9F9F9;
+}
+
+.root {
+    width: 500px;
+    margin: auto;
+}
+
+.message {
+    padding-bottom: 10px;
+}
