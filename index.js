@@ -79,7 +79,7 @@ function showMessage(payloadObject) {
     messageDiv.append(nameDiv);
     messageDiv.append(guessDiv);
 
-    document.getElementById('messages').append(messageDiv);
+    document.getElementById('messages').prepend(messageDiv);
 }
 
 // Called every time a message comes in
