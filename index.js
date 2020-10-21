@@ -34,6 +34,7 @@ client.connect();
 
 document.getElementById('guess_form').addEventListener('submit', (event) => {
     event.preventDefault();
+    if (steve) { return false; }
     const guess = event.target[0].value;
 
     event.target[0].value = '';
