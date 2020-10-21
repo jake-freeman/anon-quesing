@@ -116,3 +116,7 @@ function sendGuess(guess) {
 
 function onConnectedHandler(addr, port) {
 }
+
+document.getElementById('reset').addEventListener('click', () => {
+    document.getElementById('messages').innerHTML = '';
+});
