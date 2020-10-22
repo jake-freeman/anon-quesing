@@ -1,11 +1,8 @@
-// const oauth = prompt('Enter the password').trim();
-const oauth = 'oauth:8g0gah8nv9r03vlkfph7tfo1m2v27f';
+const oauth = 'oauth:t1ajnztqpjhi9mf8fvpc9xr4m583p8';
 const steve = window.steve;
 const name = steve ? 'steve' : prompt('Enter your name').trim();
 
-// const steve = confirm('Are you Steve?');
-
-const channel = 'jacobfreemaninc';
+const channel = 'mizium2';
 
 // Define configuration options
 const opts = {
