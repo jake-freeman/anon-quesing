@@ -36,11 +36,13 @@ document.getElementById('guess_form').addEventListener('submit', (event) => {
 
     event.target[0].value = '';
 
-    sendGuess(guess);
-    showMessage({
-        name,
-        guess,
-    });
+    if (guess.trim().length) {
+        sendGuess(guess);
+        showMessage({
+	    name,
+	    guess,
+        });
+    }
 
     return false;
 });
