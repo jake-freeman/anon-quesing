@@ -77,7 +77,9 @@ function showMessage(payloadObject) {
     messageDiv.append(nameDiv);
     messageDiv.append(guessDiv);
 
+    document.getElementById('messages').style.display = 'none';
     document.getElementById('messages').prepend(messageDiv);
+    document.getElementById('messages').style.display = 'block';
 }
 
 // Called every time a message comes in
