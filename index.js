@@ -29,20 +29,27 @@ client.on('connected', onConnectedHandler);
 // Connect to Twitch:
 client.connect();
 
+let lastMessage = '';
+
 document.getElementById('guess_form').addEventListener('submit', (event) => {
     event.preventDefault();
     if (steve) { return false; }
-    const guess = event.target[0].value;
+    let guess = event.target[0].value;
 
     event.target[0].value = '';
 
-    if (guess.trim().length) {
-        sendGuess(guess);
-        showMessage({
-	    name,
-	    guess,
-        });
+    guess = guess.trim();
+    if (!guess.length) {
+	guess = lastMessage;
     }
+    else {
+	lastMessage = guess;
+    }
+    sendGuess(guess);
+    showMessage({
+        name,
+        guess,
+    });
 
     return false;
 });
